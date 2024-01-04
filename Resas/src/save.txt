@@ -1,0 +1,14 @@
+   <ul>
+      <li v-for="prefecture in prefectures" :key="prefecture.prefCode">
+        {{ prefecture.prefName }}
+      </li>
+    </ul>
+
+-----------地方別に分けるやつ-------------
+      <ul>
+            <div v-for="prefecture in prefectures" :key="prefecture.prefCode">
+                <li v-if="prefecture.prefCode >= 1 && prefecture.prefCode <= 15">
+                    {{ prefecture.prefName }}
+                </li>
+            </div>
+        </ul>
