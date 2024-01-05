@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="app_style">
         <h1>都道府県一覧</h1>
-        <HokkaidoTohokuRegion></HokkaidoTohokuRegion>
+        <AllRegion></AllRegion>
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 import { onMounted, ref, provide } from 'vue';
 import axios from 'axios';
 import type { Prefecture } from './interfaces';
-import HokkaidoTohokuRegion from './components/HokkaidoTohokuRegion.vue';
+import AllRegion from './components/By_Region/AllRegion.vue';
 
 const prefectures = ref<Prefecture[]>([]);
 provide("prefectures", prefectures);
@@ -34,3 +34,8 @@ onMounted(() => {
 });
 </script>
 
+<style scoped>
+.app_style{
+    
+}
+</style>
