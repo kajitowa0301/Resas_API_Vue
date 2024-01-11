@@ -20,7 +20,7 @@ import KyushuRegion from './KyushuRegion.vue';
 <style scoped>
 .position_style{
     width: 100%;
-    height: 40vh;
+    height: 100%;
     display: flex;
 }
 </style>
